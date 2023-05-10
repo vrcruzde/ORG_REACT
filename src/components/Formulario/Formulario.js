@@ -13,6 +13,9 @@ const Formulario = (props) => {
     const [foto,actualizarFoto] = useState("")
     const [equipo,actualizarEquipo] =useState("")
 
+    // destructuracion
+        const {registrarColaborador}= props
+
     const manejarEvento = (e) =>{
         e.preventDefault()
         console.log("Manejar el envio")
@@ -23,7 +26,7 @@ const Formulario = (props) => {
             foto,
             equipo        //cualquiera de las dos formas funciona
         }
-        console.log(datosEviar)
+        registrarColaborador(datosEviar)
 
     }
 
