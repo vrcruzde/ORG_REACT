@@ -12,7 +12,12 @@ import Footer from './components/Footer/Index';
 function App() {
 
   const [mostrarFormulario, actualizarMOstrar] = useState(false)
-  const [colaboradores, actualizarColaboradores] = useState([])
+  const [colaboradores, actualizarColaboradores] = useState([{
+        nombre: "Victor Cruz",
+        puesto:"Estudiente",
+        foto:"https://github.com/vrcruzde.png",
+        equipo:"Front End"
+}])
 
   //Ternario: siempre lleva la condicion ? semuetra : no semuestra
   const cambiarMostrar =() =>{
