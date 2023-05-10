@@ -22,7 +22,10 @@ const Equipo = (props) => {
         <div className="colaboradores">
            
         {
-            colaboradores.map((colaborador,index) => <Colaborador datos={colaborador} key={index}/>)
+            colaboradores.map((colaborador,index) => <Colaborador 
+            datos={colaborador} 
+            key={index}
+            colorprimario={colorprimario}/>)
         }
             
 

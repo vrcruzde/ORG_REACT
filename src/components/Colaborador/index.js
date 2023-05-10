@@ -3,9 +3,10 @@ import "./Colaborador.css"
 const Colaborador = (props) =>{
     //Destructuracion
     const {nombre, puesto, foto, equipo} = props.datos
+    const {colorprimario} = props
 
     return <div className="colaborador">
-            <div className="encabezado">
+            <div className="encabezado" style={{backgroundColor:colorprimario}}>
                 <img src={foto} alt={nombre} />
             </div>  
 
