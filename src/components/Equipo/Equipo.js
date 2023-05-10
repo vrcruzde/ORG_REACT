@@ -14,7 +14,10 @@ const Equipo = (props) => {
 
     const estiloTitulo= {borderColor:colorprimario}
 
-    return <section className="equipo" style={obj}>
+    return <>
+        {
+        colaboradores.length > 0 &&
+        <section className="equipo" style={obj}>
         <h3 style={estiloTitulo}>{titulo}</h3>
         <div className="colaboradores">
            
@@ -24,7 +27,9 @@ const Equipo = (props) => {
             
 
         </div>
-    </section>
+        </section>
+        }
+        </>
 }
 
 export default Equipo

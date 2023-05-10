@@ -84,7 +84,7 @@ function App() {
         <Equipo 
           datos={equipo} 
           key={equipo.titulo}
-          colaboradores={colaboradores}
+          colaboradores={colaboradores.filter(colaborador => colaborador.equipo === equipo.titulo)}
         />)
       }
 
