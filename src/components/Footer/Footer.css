@@ -1,0 +1,18 @@
+.redes img{
+    padding: 0px 15px;
+}
+
+.logo{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer strong{
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content:end;
+    margin: 0px 10px;
+}
